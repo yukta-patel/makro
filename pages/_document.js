@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head></Head>
         <body>
           <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,600&display=swap"
             rel="stylesheet"
           />
           <ColorModeScript defaultColorMode="system" />

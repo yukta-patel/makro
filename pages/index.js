@@ -33,7 +33,6 @@ const Home = (props) => {
       <Box maxWidth="1200px" width="90%" m="0 auto">
         <Flex
           as="nav"
-          // position="fixed"
           align="center"
           justify="space-between"
           wrap="wrap"
@@ -180,8 +179,6 @@ const Home = (props) => {
               flex="1"
               pr={{ base: "0px", md: "65px" }}
               textAlign={{ Base: "center", md: "left" }}
-              // justifyItems={{ Base: "center", md: "left" }}
-              // alignItems={{ Base: "center", md: "space-between" }}
             >
               <SettingsIcon
                 color="#0072e9"
@@ -191,23 +188,36 @@ const Home = (props) => {
                 mb="30px"
               />
               <Text
-                fontSize="24px"
+                fontSize={{ base: "20px", md: "24px" }}
                 fontWeight="bold"
                 fontColor="#051441"
-                mb="25px"
+                mb={{ base: "20px", md: "25px" }}
               >
                 Management
               </Text>
-              <Text color="#6a7c92" mb="20px" fontSize="15px">
+              <Text
+                color="#6a7c92"
+                mb="20px"
+                fontSize={{ base: "14px", md: "15px" }}
+              >
                 Why I say old chap that is spiffing bodge blag pardon me
                 buggered mufty Oxfords butty bubble squeak
               </Text>
-              <HStack color="#051441" fontWeight="semibold">
+              <HStack
+                justifyContent={{ base: "center", md: "left" }}
+                color="#051441"
+                fontWeight="semibold"
+              >
                 <Text>Read More</Text>
                 <ArrowForwardIcon fontSize="18px" />
               </HStack>
             </Box>
-            <Box flex="1" pr="65px">
+            <Box
+              flex="1"
+              mt={{ base: "60px", md: "0px" }}
+              pr={{ base: "0px", md: "65px" }}
+              textAlign={{ Base: "center", md: "left" }}
+            >
               <SettingsIcon
                 color="#ec6c4f"
                 fontSize="46px"
@@ -216,23 +226,36 @@ const Home = (props) => {
                 mb="30px"
               />
               <Text
-                fontSize="24px"
+                fontSize={{ base: "20px", md: "24px" }}
                 fontWeight="bold"
                 fontColor="#051441"
-                mb="25px"
+                mb={{ base: "20px", md: "25px" }}
               >
                 Customer Support
               </Text>
-              <Text color="#6a7c92" mb="20px" fontSize="15px">
+              <Text
+                color="#6a7c92"
+                mb="20px"
+                fontSize={{ base: "14px", md: "15px" }}
+              >
                 Why I say old chap that is spiffing bodge blag pardon me
                 buggered mufty Oxfords butty bubble squeak
               </Text>
-              <HStack color="#051441" fontWeight="semibold">
+              <HStack
+                justifyContent={{ base: "center", md: "left" }}
+                color="#051441"
+                fontWeight="semibold"
+              >
                 <Text>Read More</Text>
                 <ArrowForwardIcon fontSize="18px" />
               </HStack>
             </Box>
-            <Box flex="1" pr="65px">
+            <Box
+              flex="1"
+              mt={{ base: "60px", md: "0px" }}
+              pr={{ base: "0px", md: "65px" }}
+              textAlign={{ Base: "center", md: "left" }}
+            >
               <SettingsIcon
                 color=" #40a50b"
                 fontSize="46px"
@@ -241,23 +264,37 @@ const Home = (props) => {
                 mb="30px"
               />
               <Text
-                fontSize="24px"
+                fontSize={{ base: "20px", md: "24px" }}
                 fontWeight="bold"
                 fontColor="#051441"
-                mb="25px"
+                mb={{ base: "20px", md: "25px" }}
               >
                 Collaborative
               </Text>
-              <Text color="#6a7c92" mb="20px" fontSize="15px">
+              <Text
+                color="#6a7c92"
+                mb="20px"
+                fontSize={{ base: "14px", md: "15px" }}
+              >
                 Why I say old chap that is spiffing bodge blag pardon me
                 buggered mufty Oxfords butty bubble squeak
               </Text>
-              <HStack color="#051441" fontWeight="semibold">
+              <HStack
+                justifyContent={{ base: "center", md: "left" }}
+                color="#051441"
+                fontWeight="semibold"
+              >
                 <Text>Read More</Text>
                 <ArrowForwardIcon fontSize="18px" />
               </HStack>
             </Box>
-            <Box flex="1" pr="65px">
+
+            <Box
+              flex="1"
+              mt={{ base: "60px", md: "0px" }}
+              pr={{ base: "0px", md: "65px" }}
+              textAlign={{ Base: "center", md: "left" }}
+            >
               <SettingsIcon
                 color="#6b3df0"
                 fontSize="46px"
@@ -266,18 +303,26 @@ const Home = (props) => {
                 mb="30px"
               />
               <Text
-                fontSize="24px"
+                fontSize={{ base: "20px", md: "24px" }}
                 fontWeight="bold"
                 fontColor="#051441"
-                mb="25px"
+                mb={{ base: "20px", md: "25px" }}
               >
                 Center software
               </Text>
-              <Text color="#6a7c92" mb="20px" fontSize="15px">
+              <Text
+                color="#6a7c92"
+                mb="20px"
+                fontSize={{ base: "14px", md: "15px" }}
+              >
                 Why I say old chap that is spiffing bodge blag pardon me
                 buggered mufty Oxfords butty bubble squeak
               </Text>
-              <HStack color="#051441" fontWeight="semibold">
+              <HStack
+                justifyContent={{ base: "center", md: "left" }}
+                color="#051441"
+                fontWeight="semibold"
+              >
                 <Text>Read More</Text>
                 <ArrowForwardIcon fontSize="18px" />
               </HStack>
@@ -286,7 +331,7 @@ const Home = (props) => {
         </Box>
       </Box>
 
-      <Box pt="120px">
+      <Box pt={{ base: "0px", md: "120px" }}>
         <Text
           fontSize={{ base: "14px", md: "16px" }}
           textAlign="center"
@@ -329,10 +374,16 @@ const Home = (props) => {
           </Box>
         </Flex>
       </Box>
+
       <Box pt={{ base: "60px", md: "120px" }}>
         <Flex flexDirection={{ base: "column", md: "row" }}>
           <Box flex="1">
-            <Image src={leftImg} heigh="523.51px" width="680px" float="right" />
+            <Image
+              src={leftImg}
+              height={{ base: "223.26px", md: "523.51px" }}
+              width={{ base: "290px", md: "680px" }}
+              float={{ base: "center", md: "right" }}
+            />
           </Box>
           <Box
             mt={{ base: "32px", md: "0px" }}
@@ -354,14 +405,7 @@ const Home = (props) => {
               Perfect for Operation HR <br />
               and Finance
             </Text>
-            {/* <Text
-              mb="30px"
-              fontWeight="bold"
-              color="#051441"
-              fontSize={{ base: "26px", md: "42px" }}
-            >
-              and Finance
-            </Text> */}
+
             <Text
               color="#6a7c92"
               mb={{ base: "20px", md: "30px" }}
@@ -381,8 +425,13 @@ const Home = (props) => {
             </HStack>
           </Box>
         </Flex>
-        <Flex mt="120px" flexDirection={{ base: "column", md: "row" }}>
-          <Box flex="1" pl="120px">
+        <Flex mt="120px" flexDirection={{ base: "column-reverse", md: "row" }}>
+          <Box
+            mt={{ base: "32px", md: "0px" }}
+            flex="1"
+            pl={{ base: "0px", md: "120px" }}
+            textAlign={{ base: "center", md: "left" }}
+          >
             <UnlockIcon
               color="#ff2486"
               fontSize="48px"
@@ -394,28 +443,35 @@ const Home = (props) => {
               color="#051441"
               fontSize={{ base: "26px", md: "42px" }}
             >
-              With efficiency to unlock
+              With efficiency to unlock <br /> more opportunities
             </Text>
+
             <Text
-              mb="30px"
-              fontWeight="bold"
-              color="#051441"
-              fontSize={{ base: "26px", md: "42px" }}
+              color="#6a7c92"
+              mb={{ base: "20px", md: "30px" }}
+              fontSize={{ base: "14px", md: "16px" }}
             >
-              more opportunities
-            </Text>
-            <Text color="#6a7c92" mb="30px" fontSize="16px">
               Why I say old chap that is, spiffing off his nut cor blimey guvnor
               geeza bloke knees up bobby, sloshed arse William cack Richard.
               Bloke fanny around chesed
             </Text>
-            <HStack color="#051441" fontWeight="semibold">
+            <HStack
+              justifyContent={{ base: "center", md: "left" }}
+              color="#051441"
+              fontWeight="semibold"
+            >
               <Text>Read More</Text>
               <ArrowForwardIcon fontSize="18px" />
             </HStack>
           </Box>
-          <Box flex="1" pl="30px">
-            <Image src={rightImg} heigh="523.51px" width="680px" />
+          <Box flex="1" pl={{ base: "0px", md: "30px" }}>
+            <Image
+              src={rightImg}
+              height={{ base: "223.26px", md: "523.51px" }}
+              width={{ base: "290px", md: "680px" }}
+              // height="523.51px"
+              // width="680px"
+            />
           </Box>
         </Flex>
       </Box>

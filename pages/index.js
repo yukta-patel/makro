@@ -469,8 +469,6 @@ const Home = (props) => {
               src={rightImg}
               height={{ base: "223.26px", md: "523.51px" }}
               width={{ base: "290px", md: "680px" }}
-              // height="523.51px"
-              // width="680px"
             />
           </Box>
         </Flex>

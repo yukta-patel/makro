@@ -29,7 +29,7 @@ const WhyChoose = () => {
         mt="2rem"
       >
         <Box
-          flex="1"
+          flex={1}
           pr={{ base: 0, md: 65 }}
           textAlign={{ Base: "center", md: "left" }}
         >
@@ -62,7 +62,7 @@ const WhyChoose = () => {
           </HStack>
         </Box>
         <Box
-          flex="1"
+          flex={1}
           mt={{ base: 60, md: 0 }}
           pr={{ base: 0, md: 65 }}
           textAlign={{ Base: "center", md: "left" }}
@@ -96,7 +96,7 @@ const WhyChoose = () => {
           </HStack>
         </Box>
         <Box
-          flex="1"
+          flex={1}
           mt={{ base: 60, md: 0 }}
           pr={{ base: 0, md: 65 }}
           textAlign={{ Base: "center", md: "left" }}
@@ -131,7 +131,7 @@ const WhyChoose = () => {
         </Box>
 
         <Box
-          flex="1"
+          flex={1}
           mt={{ base: 60, md: 0 }}
           pr={{ base: 0, md: 65 }}
           textAlign={{ Base: "center", md: "left" }}

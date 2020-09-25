@@ -7,7 +7,7 @@ const Advantages = () => {
   return (
     <Box pt={{ base: 60, md: 120 }}>
       <Flex flexDirection={{ base: "column", md: "row" }}>
-        <Box flex="1">
+        <Box flex={1}>
           <Image
             src={leftImg}
             height={{ base: 223.26, md: 523.51 }}
@@ -17,7 +17,7 @@ const Advantages = () => {
         </Box>
         <Box
           mt={{ base: 32, md: 0 }}
-          flex="1"
+          flex={1}
           pl={{ base: 0, md: 30 }}
           textAlign={{ base: "center", md: "left" }}
         >
@@ -53,7 +53,7 @@ const Advantages = () => {
       <Flex mt={120} flexDirection={{ base: "column-reverse", md: "row" }}>
         <Box
           mt={{ base: 32, md: 0 }}
-          flex="1"
+          flex={1}
           pl={{ base: 0, md: 120 }}
           textAlign={{ base: "center", md: "left" }}
         >
@@ -84,7 +84,7 @@ const Advantages = () => {
             <ArrowForwardIcon fontSize={18} />
           </HStack>
         </Box>
-        <Box flex="1" pl={{ base: 0, md: 30 }}>
+        <Box flex={1} pl={{ base: 0, md: 30 }}>
           <Image
             src={rightImg}
             height={{ base: 223.26, md: 523.51 }}

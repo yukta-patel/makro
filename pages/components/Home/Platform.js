@@ -25,7 +25,7 @@ const Platform = () => {
         Watch our Platform
       </Text>
       <Flex mt={{ base: "2rem", md: "5rem" }} pb={120}>
-        <Box borderWidth={1} flex="1">
+        <Box borderWidth={1} flex={1}>
           <Image
             src={leftMan}
             height={{ base: 84.74, md: 389.83 }}
@@ -39,7 +39,7 @@ const Platform = () => {
             width={{ base: 250, md: 825 }}
           />
         </Box>
-        <Box borderWidth={1} flex="1">
+        <Box borderWidth={1} flex={1}>
           <Image
             src={rightMan}
             height={{ base: 75.72, md: 389.49 }}

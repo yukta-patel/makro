@@ -4,7 +4,7 @@ import headerImg from "../../images/header_img.png";
 const Banner = () => {
   return (
     <Flex flexDirection={{ base: "column-reverse", md: "row" }}>
-      <Box flex="1">
+      <Box flex={1}>
         <Text
           fontSize={{ base: 20, md: 47 }}
           fontWeight="bold"
@@ -45,7 +45,7 @@ const Banner = () => {
           </Text>
         </HStack>
       </Box>
-      <Box flex="1">
+      <Box flex={1}>
         <Image src={headerImg} height="647.88" width="660.8" />
       </Box>
     </Flex>

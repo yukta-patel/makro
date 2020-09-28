@@ -48,6 +48,7 @@ const Footer = () => {
             mt={{ base: 30, md: 0 }}
           >
             <Button
+              backgroundColor="#007bff"
               fontSize={18}
               textAlign="center"
               borderColor="white"
@@ -90,6 +91,7 @@ const Footer = () => {
             </Box>
             <InputGroup fontSize={16} mt={39} size="lg" width={300}>
               <Input
+                border="none"
                 backgroundColor="#65778D80"
                 borderRadius={45}
                 placeholder="Email"

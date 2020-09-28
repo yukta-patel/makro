@@ -8,16 +8,10 @@ const Introduction = () => {
   return (
     <Box backgroundColor="#007bff" mt={120} mb={120}>
       <Flex pb={120} flexDirection={{ base: "column", md: "row" }}>
-        <HStack flex={1} borderWidth={1}>
-          <image
-            src={mobile}
-            borderWidth={1}
-            borderColor="white"
-            height={100}
-            width={100}
-          />
-          <image src={computer} borderWidth={1} height={100} width={100} />
-          <image src={watch} borderWidth={1} height={100} width={100} />
+        <HStack flex={1}>
+          <image src={mobile} borderColor="white" height={100} width={100} />
+          <image src={computer} height={1000} width={1000} />
+          <image src={watch} height={1000} width={1000} />
         </HStack>
         <Box
           textColor="white"
@@ -39,6 +33,7 @@ const Introduction = () => {
             off his nut.
           </Text>
           <Button
+            backgroundColor="#007bff"
             textAlign="center"
             color="white"
             borderColor="white"

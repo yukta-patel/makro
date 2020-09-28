@@ -28,6 +28,7 @@ const Banner = () => {
         <HStack>
           <Button
             color="#4154F1"
+            backgroundColor="white"
             borderColor="#4154F1"
             borderWidth={1}
             borderRadius={45}

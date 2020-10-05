@@ -38,7 +38,11 @@ const Footer = () => {
             </Text>
           </Box>
           <Box flex={2} d="flex" alignItems="center" mt={{ base: 30, md: 0 }}>
-            <Input variant="flushed" placeholder="Your Email" />
+            <Input
+              variant="flushed"
+              textColor="white"
+              placeholder="Your Email"
+            />
           </Box>
           <Box
             flex={1}

@@ -1,5 +1,6 @@
-import { Box, Flex, Text, Button, Image, HStack } from "@chakra-ui/core";
+import { Box, Flex, Text, Button, Image, HStack, Link } from "@chakra-ui/core";
 import headerImg from "../../images/header_img.png";
+import LinkTo from "next/link";
 
 const Banner = () => {
   return (
@@ -37,13 +38,15 @@ const Banner = () => {
           >
             Get Started
           </Button>
-          <Text
-            borderBottomWidth={1}
-            color="#6A7C92"
-            _hover={{ color: "#4154F1" }}
-          >
-            Watch Video
-          </Text>
+          <LinkTo href="#">
+            <Link
+              borderBottomWidth={1}
+              color="#6A7C92"
+              _hover={{ color: "#4154F1" }}
+            >
+              Watch Video
+            </Link>
+          </LinkTo>
         </HStack>
       </Box>
       <Box flex={1}>

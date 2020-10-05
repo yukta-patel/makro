@@ -1,4 +1,5 @@
-import { Box, Flex, Text, Image, HStack } from "@chakra-ui/core";
+import LinkTo from "next/link";
+import { Box, Flex, Text, Image, HStack, Link } from "@chakra-ui/core";
 import leftImg from "../../images/left-img.png";
 import rightImg from "../../images/right-img.png";
 import { SettingsIcon, ArrowForwardIcon, UnlockIcon } from "@chakra-ui/icons";
@@ -7,12 +8,12 @@ const Advantages = () => {
   return (
     <Box pt={{ base: 60, md: 120 }}>
       <Flex flexDirection={{ base: "column", md: "row" }}>
-        <Box flex={1}>
+        <Box d="flex" flex={1} justifyContent={{ base: "center", md: "left" }}>
           <Image
+            borderWidth={1}
             src={leftImg}
             height={{ base: 223.26, md: 523.51 }}
             width={{ base: 290, md: 680 }}
-            float={{ base: "center", md: "right" }}
           />
         </Box>
         <Box
@@ -44,8 +45,11 @@ const Advantages = () => {
             justifyContent={{ base: "center", md: "left" }}
             color="#051441"
             fontWeight="semibold"
+            _hover={{ color: "#007bff" }}
           >
-            <Text>Read More</Text>
+            <LinkTo href="#">
+              <Link _hover={{ textDecoration: "none" }}>Read More</Link>
+            </LinkTo>
             <ArrowForwardIcon fontSize={18} />
           </HStack>
         </Box>
@@ -79,12 +83,20 @@ const Advantages = () => {
             justifyContent={{ base: "center", md: "left" }}
             color="#051441"
             fontWeight="semibold"
+            _hover={{ color: "#007bff" }}
           >
-            <Text>Read More</Text>
+            <LinkTo href="#">
+              <Link _hover={{ textDecoration: "none" }}>Read More</Link>
+            </LinkTo>
             <ArrowForwardIcon fontSize={18} />
           </HStack>
         </Box>
-        <Box flex={1} pl={{ base: 0, md: 30 }}>
+        <Box
+          d="flex"
+          flex={1}
+          pl={{ base: 0, md: 30 }}
+          justifyContent={{ base: "center", md: "right" }}
+        >
           <Image
             src={rightImg}
             height={{ base: 223.26, md: 523.51 }}

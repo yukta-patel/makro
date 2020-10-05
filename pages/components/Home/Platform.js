@@ -1,7 +1,8 @@
-import { Box, Flex, Text, Image } from "@chakra-ui/core";
+import { Box, Flex, Text, Image, HStack } from "@chakra-ui/core";
 import videoImg from "../../images/video-img.jpg";
 import leftMan from "../../images/left-man.png";
 import rightMan from "../../images/right-man.png";
+import leaves from "../../images/leaves.png";
 
 const Platform = () => {
   return (
@@ -26,11 +27,19 @@ const Platform = () => {
       </Text>
       <Flex mt={{ base: "2rem", md: "5rem" }} pb={120}>
         <Box flex={1}>
-          <Image
-            src={leftMan}
-            height={{ base: 84.74, md: 389.83 }}
-            width={{ base: 50, md: 230 }}
-          />
+          <HStack>
+            <Image
+              src={leftMan}
+              height={{ base: 84.74, md: 389.83 }}
+              width={{ base: 50, md: 230 }}
+            />
+            <Image
+              src={leaves}
+              width={{ base: 30, md: 170 }}
+              pt={{ base: 120, md: 340 }}
+              mr={{ base: 70, md: 0 }}
+            />
+          </HStack>
         </Box>
         <Box flex={{ base: "3", md: "2" }}>
           <Image

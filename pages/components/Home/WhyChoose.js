@@ -1,4 +1,5 @@
-import { Box, Flex, Text, HStack } from "@chakra-ui/core";
+import LinkTo from "next/link";
+import { Box, Flex, Text, HStack, Link } from "@chakra-ui/core";
 import { SettingsIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 
 const WhyChoose = () => {
@@ -56,8 +57,11 @@ const WhyChoose = () => {
             justifyContent={{ base: "center", md: "left" }}
             color="#051441"
             fontWeight="semibold"
+            _hover={{ color: "#007bff" }}
           >
-            <Text>Read More</Text>
+            <LinkTo href="#">
+              <Link _hover={{ textDecoration: "none" }}>Read More</Link>
+            </LinkTo>
             <ArrowForwardIcon fontSize={18} />
           </HStack>
         </Box>
@@ -90,8 +94,11 @@ const WhyChoose = () => {
             justifyContent={{ base: "center", md: "left" }}
             color="#051441"
             fontWeight="semibold"
+            _hover={{ color: "#007bff" }}
           >
-            <Text>Read More</Text>
+            <LinkTo href="#">
+              <Link _hover={{ textDecoration: "none" }}>Read More</Link>
+            </LinkTo>
             <ArrowForwardIcon fontSize={18} />
           </HStack>
         </Box>
@@ -124,8 +131,11 @@ const WhyChoose = () => {
             justifyContent={{ base: "center", md: "left" }}
             color="#051441"
             fontWeight="semibold"
+            _hover={{ color: "#007bff" }}
           >
-            <Text>Read More</Text>
+            <LinkTo href="#">
+              <Link _hover={{ textDecoration: "none" }}>Read More</Link>
+            </LinkTo>
             <ArrowForwardIcon fontSize={18} />
           </HStack>
         </Box>
@@ -159,8 +169,11 @@ const WhyChoose = () => {
             justifyContent={{ base: "center", md: "left" }}
             color="#051441"
             fontWeight="semibold"
+            _hover={{ color: "#007bff" }}
           >
-            <Text>Read More</Text>
+            <LinkTo href="#">
+              <Link _hover={{ textDecoration: "none" }}>Read More</Link>
+            </LinkTo>
             <ArrowForwardIcon fontSize={18} />
           </HStack>
         </Box>
